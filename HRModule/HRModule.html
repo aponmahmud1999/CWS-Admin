@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="HRModule.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">CWS</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="../Index.html" class="">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="HRModule/HRModule.html">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">HR Module</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-user-account'></i>
+            <span class="links_name">Add Account</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Customer list</span>
+          </a>
+        </li>
+      
+     
+        <li>
+          <a href="Team/Team.html">
+            <i class='bx bx-user' ></i>
+            <span class="links_name">Team</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-message' ></i>
+            <span class="links_name">Notification</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-add-to-queue'></i>
+            <span class="links_name">Add Manager</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-add-to-queue'></i>
+            <span class="links_name">Add Employee</span>
+          </a>
+        </li>
+      
+        <li>
+          <a href="#">
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Setting</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <!--<img src="images/profile.jpg" alt="">-->
+        <span class="admin_name">Subham</span>
+        <i class='bx bx-chevron-down' ></i>
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+            <button class="tablinks hrbutton" onclick="openCity(event, 'Salary')">Salary</button>
+        </div>
+        <div class="box">
+            <button class="tablinks hrbutton" onclick="openCity(event, 'Leave')">Leave Request</button>
+        </div>
+        <div class="box">
+            <button class="tablinks hrbutton" onclick="openCity(event, 'Attendence')">Attendence</button>
+        </div>
+        <div class="box">
+            <button class="tablinks hrbutton" onclick="openCity(event, 'policy')">Company Policy</button>
+      </div>
+
+      <div id="Salary" class="tabcontent">
+       
+      </div>
+      
+      <div id="Leave" class="tabcontent">
+        <h3>Leave</h3>
+        <p>Leave is the capital of France.</p> 
+      </div>
+      
+      <div id="Attendence" class="tabcontent">
+        <h3>Attendence</h3>
+        <p>Attendence is the capital of Japan.</p>
+      </div>
+      <div id="policy" class="tabcontent">
+       
+        <p>Will Show the company policy.</p>
+      </div>
+     
+    </div>
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+ <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+
+</body>
+</html>

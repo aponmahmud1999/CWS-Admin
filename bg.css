@@ -1,0 +1,45 @@
+
+    .bgimgattendence{
+        background-image: url("../backgroundimage.png");
+        background-repeat: no-repeat;
+     background-size: 350px 350px;
+    }
+    .bgimghrmodule{
+        background-image: url("backgroundimage.png");
+        background-repeat: no-repeat;
+     background-size: 350px 350px;
+
+    }
+    .bgimgtodo{
+        background-image: url("backgroundimage.png");
+        background-repeat: no-repeat;
+     background-size: 350px 300px;
+   
+    }
+    .bgimgcustomer{
+        background-image: url("backgroundimage.png");
+        background-repeat: no-repeat;
+     background-size: 350px 300px;
+    }
+    .bgimgemployee{
+        background-image: url("backgroundimage.png");
+        background-repeat: no-repeat;
+     background-size: 350px 300px;   
+    }
+    .bgimgaddmanager{
+        background-image: url("background.png");
+        background-repeat: no-repeat;
+    background-size: 75% 50%;
+   background-position: center center;
+    }
+    .bgimgemploee{
+        background-image: url("background.png");
+        background-repeat: no-repeat;
+    background-size: 75% 50%;
+   background-position: center center;
+    }
+    .bgimgapprove{
+        background-image: url("backgroundimage.png");
+        background-repeat: no-repeat;
+     background-size: 350px 300px;
+    }
