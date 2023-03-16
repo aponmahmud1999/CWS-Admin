@@ -9,6 +9,14 @@
 .tabcontent{
     display: none;
 }
+.acountbutton{
+    font-size: 20px;
+    font-weight: 500;
+ padding: 40px 40px;
+border: none;
+background: none;
+cursor: pointer;
+}
 .hrbutton{
     font-size: 20px;
     font-weight: 500;
@@ -17,7 +25,14 @@ border: none;
 background: none;
 cursor: pointer;
 }
-
+.productbutton{
+    font-size: 20px;
+    font-weight: 500;
+ padding: 20px 20px;
+border: none;
+background: none;
+cursor: pointer;
+}
 .sidebar{
   position: fixed;
   height: 100%;
@@ -448,36 +463,4 @@ nav .profile-details i{
     left: 60px;
     width: calc(100% - 60px);
   }
-}
-.decisionbutton{
-   
-      
-    align-items: center;
-    appearance: none;
-    background-color: #00eaca;
-    border-radius: 4px;
-    border-width: 0;
-   
-    box-sizing: border-box;
-    color: #36395A;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: "JetBrains Mono",monospace;
-    height: 48px;
-    justify-content: center;
-    line-height: 1;
-    list-style: none;
-    overflow: hidden;
-    padding-left: 40px;
-    padding-right: 40px;
-    position: relative;
-    
-    text-decoration: none;
-    transition: box-shadow .15s,transform .15s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    will-change: box-shadow,transform;
-
 }
