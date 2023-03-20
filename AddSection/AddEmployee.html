@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="AddManager.css">
     <link rel="stylesheet" href="../bg.css">
+    <link rel="stylesheet" href="dropdown.css">
    
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -101,51 +102,75 @@
     </nav>
 
     <div class="home-content">
-        <div class="bgimgemploee form">
-            <div>
-                <p class="header">Name:</p>
-                <input type="text" class="input"  name="name">
-            </div>
-             <div>
-                <p class="header">Date of Birth:</p>
-                <input type="date" class="input"   name="name">
-             </div>
-             <div>
-                <p class="header">Address:</p>
-                <input type="text" class="input"  name="address"><br>
-            </div>
-            <div>
-                <p class="header">Phone Number:</p>
-                <input type="number" class="input"  name="number"><br>
-            </div>
-            <div>
-                <p class="header">WhatsApp Number:</p>
-                <input type="number" class="input"  name="number"><br>
-            </div>
-            <div>
-                <p class="header">Email:</p>
-                <input type="email" class="input"  name="email"><br>
-            </div>
-            <div>
-                <p class="header">Aadhaar or Government ID:</p>
-                <input type="number" class="input"  name="number"><br>
-            </div>
-            <div>
-                <p class="header">PAN:</p>
-                <input type="number" class="input"  name="pan"><br>
-            </div>
-            <div>
-                <p class="header">Gender:</p>
-                <input type="text" class="input"  name="gender"><br>
-            </div>
-            <div>
-                <p class="header">Salary:</p>
-                <input type="number" class="input"  name="salary"><br>
-            </div>
-          
-              
+      <div class="form">
+        <div>
+            <p class="header">Name:</p>
+            <input type="text" class="input"  name="name">
+        </div>
+         <div>
+            <p class="header">Date of Birth:</p>
+            <input type="date" class="input"   name="name">
+         </div>
+         <div>
+            <p class="header">Address:</p>
+            <input type="text" class="input"  name="address"><br>
+        </div>
+        <div>
+            <p class="header">Phone Number:</p>
+            <input type="number" class="input"  name="number"><br>
+        </div>
+       
+        <div>
+            <p class="header">Email:</p>
+            <input type="email" class="input"  name="email"><br>
+        </div>
+        <div>
+            <p class="header">Aadhaar or Government ID:</p>
+            <input type="number" class="input"  name="number"><br>
+        </div>
+        <div>
+            <p class="header">PAN:</p>
+            <input type="number" class="input"  name="pan"><br>
+        </div>
+        <div>
+          <p class="header">Date of Joining:</p>
+          <input type="date" class="input"   name="name">
+       </div>
+        <div>
+            <p class="header">Gender:</p>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">Male</label>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">Female</label>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">Others</label>
+        </div>
+        <div>
+            <p class="header">Basic Salary:</p>
+            <input type="number" class="input"  name="salary"><br>
+        </div>
+        <div>
+            <p class="header">Gross Salary:</p>
+            <input type="number" class="input"  name="salary"><br>
+        </div>
+        <div>
+            <p class="header">Net Salary:</p>
+            <input type="number" class="input"  name="salary"><br>
+        </div>
+        <div>
+          <div class="dropdown bgimg">
+            <button class="dropbtn">ESI/PF</button>
+            <div class="dropdown-content">
+              <a href="">ESI</a>
+              <a href="">PF</a>
              
             </div>
+          </div>
+        </div>
+      
+          
+         
+        </div>
             <a  class="loginbutton ">Submit</a>
               
     
